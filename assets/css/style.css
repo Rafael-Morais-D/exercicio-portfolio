@@ -21,6 +21,7 @@ header {
 
 .sobre {
     width: 65%;
+    position: absolute;
 }
 
 header h1 {
@@ -63,6 +64,77 @@ header p {
     filter: drop-shadow(5px 5px 5px rgba(32, 32, 32, 0.5));
 }
 
+main {
+    width: 100%;
+}
+
+main article {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    color: #fff;
+}
+
+main article img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 30px auto;
+}
+
+main article h3 {
+    font-weight: 400;
+}
+
+.descricao {
+    position: absolute;
+    bottom: 50px;
+}
+
+.socialMain {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: rgba(255,255,255,0.6);
+}
+
+.socialMain:hover {
+    transition: color 0.5s ease-in-out;
+    color: #fff;
+}
+
+article img {
+    width: 100%;
+}
+
+.artigo1 {
+    background-color: orange;
+}
+
+.artigo2 {
+    background-color: purple;
+}
+
+.artigo3 {
+    background-color: green;
+}
+
+.artigo4 {
+    background-color: crimson;
+}
+
+.artigo5 {
+    background-color: darkblue;
+}
+
+.artigo6 {
+    background-color: rgb(233, 93, 0);
+}
+
+.artigo7 {
+    background-color: firebrick;
+}
+
 aside {
     width: 100%;
     padding: 40px 80px;
@@ -85,4 +157,39 @@ footer {
     background-color: #1f1f1f;
     color: #ccc;
     text-align: center;
+}
+
+@media screen and (min-width:1000px) {
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 40%;
+        height: 100%;
+        padding: 75px 85px 50px;
+    }
+
+    header p {
+        padding-right: 25px;
+    }
+
+    main, aside, footer {
+        margin-left: 40%;
+    }
+
+    main article img {
+        max-width: 100%;
+        vertical-align: middle;
+        margin-left: 25%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+    .socialMain {
+        font-size: 1.5em;
+    }
 }
