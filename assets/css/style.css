@@ -4,11 +4,63 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
 }
 
 body {
     display: flex;
     flex-flow: row wrap;
+}
+
+header {
+    position: static;
+    width: 100%;
+    height: 750px;
+    padding: 75px 55px 50px 55px;
+}
+
+.sobre {
+    width: 65%;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    color: rgb(99, 99, 99);
+}
+
+header p {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+#redesSociais {
+    margin-top: 45px;
+    margin-bottom: 65px;
+}
+
+#redesSociais a {
+    font-size: 1.5em;
+    color: #bbb;
+    padding-right: 25px;
+}
+
+#redesSociais a:hover {
+    color: rgb(110, 178, 255);
+    transition: color 0.5s ease-in-out;
+}
+
+.bt {
+    color: #fff;
+    background-color: #3b80fe;
+    padding: 15px 65px;
+    border-radius: 50px;
+    transition: filter 0.5s ease-in-out;
+}
+
+.bt:hover {
+    filter: drop-shadow(5px 5px 5px rgba(32, 32, 32, 0.5));
 }
 
 aside {
